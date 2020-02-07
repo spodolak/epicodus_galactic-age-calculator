@@ -12,9 +12,11 @@ This site is designed to take in the user's earth age and return their respetive
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-|**Take user age and return in earth years by passing through GalacticAge object**| Age: 31 | Earth Age: 31
-|**Develop method to calculate users solar age given any planet's solar year using the following equation:** _planetAge = [(earthAge*365)/planetSolarYear]_| Earth Age = 31, mercurySolarYear = 88 | mercuryAge = 193.2|
-|Create an arrray for planet solar years and run above method on each index of the array|planetSolarYears[]|[88, 225, 365, 687...]|
+|**Take user age and return in earth years by passing through GalacticAge object**| Age: 31 | Age In Earth Years: 31
+|**Develop method to calculate users solar age given any planet's solar year using the following equation:** _planetAge = [(earthAge*365)/planetSolarYear]_| Age In Earth Years = 31, mercurySolarYear = 88 | mercuryAge = 193.2|
+|**Create an arrray for planet solar years and run above method on each index of the array**|planetSolarYears[]|[88, 225, 365, 687...]|
+|**Given user age, return solar year life expectancy on other planets assuming user will live to 100 years on earth**| Age in Earth Years = 31 | Years left on Mercury: 291 years|
+|**Given user age over 100, return number of years past life expectancy| Age in Earth Years: 101 | Years left on Mercury: 4.17 years past expected|
 
 
 ## Setup/Installation Requirements
