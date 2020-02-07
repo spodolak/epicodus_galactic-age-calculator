@@ -4,7 +4,8 @@ export class GalacticAge	{
 	}
 	
 	solarAge(planetSolarYear)	{
-		return 128.57;
+		this.age = ((this.age*365)/planetSolarYear);
+		return this.age;
 	}
 
 };
