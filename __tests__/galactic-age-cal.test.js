@@ -20,5 +20,6 @@ describe ( 'GalacticAge', () => {
 		expect(galacticAge.calculateGalacticAges()).toEqual([129.17, 50.39, 31, 16.48, 2.61, 1.05, 0.37, 0.19]);
 	});
 
+	test
 }); 
 
