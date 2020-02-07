@@ -4,23 +4,21 @@ export class GalacticAge	{
 		this.galacticAges = [];
 	}
 	
-	// solarAge(planetSolarYear)	{
-	// 	let planetAge = +((this.age*365)/planetSolarYear).toFixed(2);
-	// 	return planetAge;
-	// }
+	solarAge(planetSolarYear)	{
+		let planetAge = +((this.age*365)/planetSolarYear).toFixed(2);
+		return planetAge;
+	}
 	
 	calculateGalacticAges() {
 		const planetSolarYears = [87.6, 224.548, 365, 686.5285, 4329.557, 10759, 30688.5, 60182];
-		let age = this.age;
-		let galacticAges = this.galacticAges;
+		let galacticAge = this;
 		planetSolarYears.forEach(function(planetSolarYear) {
-		let planetAge = +((age*365)/planetSolarYear).toFixed(2);
-		galacticAges.push(planetAge);
-		})
+		let planetSolarAge = galacticAge.solarAge(planetSolarYear);
+		galacticAge.galacticAges.push(planetSolarAge);
+	});
 	return this.galacticAges;			
 	}
 };
-
 
 
 
