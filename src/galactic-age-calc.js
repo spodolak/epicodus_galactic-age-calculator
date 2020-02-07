@@ -11,11 +11,12 @@ export class GalacticAge	{
 	}
 	
 	calculateGalacticAges() {
+		let solarAge() = this.solarAge();
 		this.planetSolarYears.forEach(function(planetSolarYear) {
-		let planetSolarAge = solarAge(planetSolarYear);
+		let planetSolarAge = GalacticAge.solarAge(planetSolarYear);
 		this.galacticAges.push(planetSolarAge);
 		return this.galacticAges;			
-		});
+		})
 	}
 };
 
