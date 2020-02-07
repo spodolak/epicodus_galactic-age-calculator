@@ -15,7 +15,7 @@ export class GalacticAge	{
 		let galacticAges = this.galacticAges;
 		planetSolarYears.forEach(function(planetSolarYear) {
 		let planetAge = +((age*365)/planetSolarYear).toFixed(2);
-		this.galacticAges.push(planetAge);
+		galacticAges.push(planetAge);
 		})
 	return this.galacticAges;			
 	}
