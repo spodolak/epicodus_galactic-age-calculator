@@ -14,7 +14,7 @@ describe ( 'GalacticAge', () => {
 
 	test('should develop method to calculate user solar age given days in planet solar year', () => {
 		let galacticAge = new GalacticAge(31);
-		expect(galacticAge.solarAge(88)).toEqual(128.57);
+		expect(galacticAge.solarAge(88)).toEqual(128.58);
 	});
 
 }); 
