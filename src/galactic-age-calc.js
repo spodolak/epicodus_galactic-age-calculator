@@ -18,6 +18,11 @@ export class GalacticAge	{
 	});
 	return this.galacticAges;			
 	}
+
+	calculateGalacticLifeExpectancy(lifeExpectancy) {
+		let yearsLeftAlive = lifeExpectancy - this.age;
+		return yearsLeftAlive
+	}
 };
 
 

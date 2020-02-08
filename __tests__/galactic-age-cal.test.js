@@ -21,7 +21,8 @@ describe ( 'GalacticAge', () => {
 	});
 
 	test('should calculate and convert years left to live on each planet based on inputted age and 100 earth-year life expectancy', () => {
-		expect(galacticAge.calculateGalacticLifeExpectancy()).toEqual([287.5, 112.16, 69, 36.68, 5.87, 2.34, 0.82, 0.41]);
+		expect(galacticAge.calculateGalacticLifeExpectancy(100)).toEqual(69);
+		// expect(galacticAge.calculateGalacticLifeExpectancy()).toEqual([287.5, 112.16, 69, 36.68, 5.87, 2.34, 0.82, 0.41]);
 	});
 }); 
 
