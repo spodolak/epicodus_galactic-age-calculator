@@ -14,7 +14,7 @@ export class GalacticAge	{
 		const planetSolarYears = [87.6, 224.548, 365, 686.5285, 4329.557, 10759, 30688.5, 60182]; //values of planet year standardized to earth days
 		let galacticAge = this;
 		planetSolarYears.forEach(function(planetSolarYear) {
-		let planetSolarAge = galacticAge.solarAgeConverter(planetSolarYear);
+		let planetSolarAge = galacticAge.solarYearConverter(planetSolarYear, galacticAge.age);
 		galacticAge.galacticAges.push(planetSolarAge);
 	});
 	return this.galacticAges;			

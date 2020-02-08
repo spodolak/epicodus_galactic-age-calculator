@@ -13,7 +13,7 @@ describe ( 'GalacticAge', () => {
 	});
 	
 	test('should calculate user solar age when passed a unique planets solar year', () => {
-		expect(galacticAge.solarAgeConverter(87.6)).toEqual(129.17);
+		expect(galacticAge.solarYearConverter(87.6, 31)).toEqual(129.17);
 	});
 
 	test('should run the users solar age converter for each planet and returns an array of planet ages', () =>	{
