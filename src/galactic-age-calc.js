@@ -5,9 +5,9 @@ export class GalacticAge	{
 		this.yearsRemainingPlanets = [];
 	}
 	
-	solarAgeConverter(planetSolarYear)	{
-		let planetAge = +((this.age*365)/planetSolarYear).toFixed(2);
-		return planetAge;
+	solarYearConverter(planetSolarYear, year)	{
+		let planetYear = +((year*365)/planetSolarYear).toFixed(2);
+		return planetYear;
 	}
 	
 	calculateGalacticAges() {
@@ -25,9 +25,9 @@ export class GalacticAge	{
 		const planetSolarYears = [87.6, 224.548, 365, 686.5285, 4329.557, 10759, 30688.5, 60182]; //values of planet year standardized to earth days
 		let galacticAge = this;
 		planetSolarYears.forEach(function(planetSolarYear) {
-		let yearsRemainingPlanet = galacticAge.solarAgeConverter(planetSolarYear);
-		galacticAge.galacticAges.push(yearsRemainingPlanet);
+			let yearsRemainingPlanet = galacticAge.solarYearConverter(planetSolarYear, yearsToLive);
+		galacticAge.yearsRemainingPlanets.push(yearsRemainingPlanet);
 		});
-		return yearsToLive;
+		return this.yearsRemainingPlanets;
 	}
 };
