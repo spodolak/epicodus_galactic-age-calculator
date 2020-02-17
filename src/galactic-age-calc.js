@@ -14,21 +14,21 @@ export class GalacticAge	{
 	
 	//calculates all relative planet ages given an earth age. returns an array of planet ages.
 	calculateGalacticAges() {
-		let galacticAge = this;
-		galacticAge.planetConversionFactors.forEach(function(planetConversionFactor) {
-		let planetAge = galacticAge.solarYearConverter(planetConversionFactor, galacticAge.age);
-		galacticAge.galacticAges.push(planetAge);
-	});
+
+		this.planetConversionFactors.forEach((planetConversionFactor) => {
+			let planetAge = this.solarYearConverter(planetConversionFactor, this.age);
+			this.galacticAges.push(planetAge);
+			});
 	return this.galacticAges;			
 	}
 
+
 	//calculates relative years left to live on each planet given an age and life expectancy (both given in earth years)
 	calculateGalacticLifeExpectancy(lifeExpectancy) {
-		let galacticAge = this;
 		let yearsToLive = lifeExpectancy - this.age;
-		galacticAge.planetConversionFactors.forEach(function(planetConversionFactor) {
-			let yearsRemainingPlanet = galacticAge.solarYearConverter(planetConversionFactor, yearsToLive);
-		galacticAge.yearsRemainingPlanets.push(yearsRemainingPlanet);
+		this.planetConversionFactors.forEach((planetConversionFactor) => {
+			let yearsRemainingPlanet = this.solarYearConverter(planetConversionFactor, yearsToLive);
+		this.yearsRemainingPlanets.push(yearsRemainingPlanet);
 		});
 		return this.yearsRemainingPlanets;
 	}
