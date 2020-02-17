@@ -13,10 +13,10 @@ This site is designed to take in the user's earth age and return their respetive
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
 |**Take user age and return in earth years by passing through GalacticAge object**| Age: 31 | Age In Earth Years: 31
-|**Develop method to calculate users solar age given any planet's solar year using the following equation:** _planetAge = [(earthAge*365)/planetSolarYear]_| Age In Earth Years = 31, mercurySolarYear = 88 | mercuryAge = 193.2|
-|**Create an arrray for planet solar years and run above method on each index of the array**|planetSolarYears[]|[88, 225, 365, 687...]|
-|**Given user age, return solar year life expectancy on other planets assuming user will live to 100 years on earth**| Age in Earth Years = 31 | Years left on Mercury: 291 years|
-|**Given user age over 100, return number of years past life expectancy**| Age in Earth Years: 101 | Years left on Mercury: 4.17 years past expected|
+|**Calculate user's solar age given any planet's solar year**| Age In Earth Years = 31, mercurySolarYear = 88 | mercuryAge = 193.2|
+|**Create an array of solar year conversion factors for each planet**|Planets: Mercury, Venus Earth, Mars, Jupiter, Saturn, Uranus, Neptune|Conversion factors _(respectively)_: 87.6, 224.548, 365, 686.5285, 4329.557, 10759, 30688.5, 60182|
+|**Given user age, return solar year life expectancy on other planets assuming user will live to 100 years on earth**| Age in Earth Years = 31 | Years left on Mercury: 287. Years left on Venus: 112.16. Years left on Earth: 69. Years left on Mars: 36.68. Years left on Jupiter: 5.82. Years left on Saturn: 2.34. Years left on Uranus: 0.82. Years left on Neptune: 0.42.|
+|**Given user age over 100 year life expectancy, return number of years past life expectancy for each planet**| Age in Earth Years: 101 | Years left on Mercury: 4.17 years past expected. Years left on Venus: 1.63 years past expected. Years left on Earth: 1 year past expected. Years left on Mars: 0.53 years past expected. Years left on Jupiter: 0.08 years past expected. Years left on Saturn: 0.03 years past expected. Years left on Uranus: 0.01 years past expected. Years left on Neptune: 0.01 years past expected.|
 
 
 ## Setup/Installation Requirements
@@ -46,7 +46,7 @@ _For any questions or comments please contact:_ Stephanie Podolak
 
 ### License
 
-*{This software is licensed under the MIT license}*
+*This software is licensed under the MIT license*
 
-Copyright (c) 2020 **_{Stephanie Podolak}_**
+Copyright (c) 2020 **_Stephanie Podolak_**
 

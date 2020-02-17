@@ -22,7 +22,6 @@ export class GalacticAge	{
 	return this.galacticAges;			
 	}
 
-
 	//calculates relative years left to live on each planet given an age and life expectancy (both given in earth years)
 	calculateGalacticLifeExpectancy(lifeExpectancy) {
 		let yearsToLive = lifeExpectancy - this.age;
