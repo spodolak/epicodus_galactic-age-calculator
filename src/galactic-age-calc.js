@@ -28,7 +28,10 @@ export class GalacticAge	{
 		let yearsToLive = lifeExpectancy - this.age;
 		this.planetConversionFactors.forEach((planetConversionFactor) => {
 			let yearsRemainingPlanet = this.solarYearConverter(planetConversionFactor, yearsToLive);
-		this.yearsRemainingPlanets.push(yearsRemainingPlanet);
+			if (yearsRemainingPlanet < 0) {
+				(yearsRemainingPlanet)*=(-1);
+			}
+			this.yearsRemainingPlanets.push(yearsRemainingPlanet);
 		});
 		return this.yearsRemainingPlanets;
 	}

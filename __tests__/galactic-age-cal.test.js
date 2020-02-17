@@ -27,7 +27,7 @@ describe ( 'GalacticAge', () => {
 
 	test('should return number of years past life expectancy for each planet given user age over 100 earth years old', () => {
 		galacticAge.age = 101;
-		expect(galacticAge.calculateGalacticLifeExpectancy(100)).toEqual([4.17, 1.63, 1, 0.53, 0.08, 0.03, 0.01, 0.01 ]);
+		expect(galacticAge.calculateGalacticLifeExpectancy(100)).toEqual([4.17, 1.63, 1, 0.53, 0.08, 0.03, 0.01, 0.01]);
 
 	});
 }); 
