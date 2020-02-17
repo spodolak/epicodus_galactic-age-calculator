@@ -14,7 +14,6 @@ export class GalacticAge	{
 	
 	//calculates all relative planet ages given an earth age. returns an array of planet ages.
 	calculateGalacticAges() {
-
 		this.planetConversionFactors.forEach((planetConversionFactor) => {
 			let planetAge = this.solarYearConverter(planetConversionFactor, this.age);
 			this.galacticAges.push(planetAge);
