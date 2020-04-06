@@ -21,8 +21,8 @@ This site is designed to take in the user's earth age and return their respetive
 
 ## Setup/Installation Requirements
 
-1. Clone this repository to your desktop. If using Git Bash you can do this by typing "git clone https://github.com/spodolak/galactic-age-calculator.git" into your command line while in desktop directory.
-2. Navigate inside project directory by entering "cd epicodus_galactic-age-calculator" in Git Bash.
+1. Clone this repository to your desktop. If using Git Bash you can do this by typing "git clone https://github.com/spodolak/GalacticAgeCalculator.git" into your command line while in desktop directory.
+2. Navigate inside project directory by entering "cd GalacticAgeCalculator" in Git Bash.
 3. Open index.html file in your browser of choice by entering "open index.html".
 
 
@@ -46,7 +46,7 @@ _For any questions or comments please contact:_ Stephanie Podolak
 
 ### License
 
-*This software is licensed under the MIT license*
+[MIT](https://choosealicense.com/licenses/mit/)
 
 Copyright (c) 2020 **_Stephanie Podolak_**
 
